@@ -73,3 +73,14 @@ color: #E95A08;
     font-size: 1.37rem;
     font-weight: 400;
 }
+
+/* main section started */
+main{
+    margin-top: 130px;
+}
+
+/* flower plants styles */
+.our-plants{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
