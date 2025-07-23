@@ -4,12 +4,12 @@
 
 
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
@@ -17,12 +17,59 @@
 
 
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
 }
 
+/* nav styles */
 
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px auto;
+
+}
+.nav-links li{
+    list-style: none;
+    
+}
+.nav-item a{
+    text-decoration: none;
+    margin-right: 34px;
+}
+/* banner style */
+
+.banner{
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin: 221px 150px auto;
+    height: 461px;
+}
+.banner-container{
+    margin-top: 162px;
+    height:299px;
+}
+.Banner-title{
+    color:black;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-red{
+color: #E95A08;
+}
+.banner-des{
+    color: rgba(0, 0, 0, 0.5);
+    font: inter;
+    font-size: 1.37rem;
+    font-weight: 400;
+}
