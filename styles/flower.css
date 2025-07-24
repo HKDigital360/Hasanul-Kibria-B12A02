@@ -28,8 +28,12 @@
 .display-flex{
     display: flex;
 }
-
+.max-width{
+    /* max-width: 1440px;
+    margin: auto; */
+}
 /* nav styles */
+
 
 .navbar{
     justify-content: space-between;
@@ -49,11 +53,15 @@
 
 .banner{
     justify-content: space-between;
-    justify-items: center;
+    /* justify-items: center; */
+   
     align-items: center;
-    align-content: center;
-    margin: 221px 150px auto;
+    align-items: bottom center;
+    
+    margin: 120px 150px;
+    
     height: 461px;
+    gap: 13px;
 }
 .banner-container{
     margin-top: 162px;
@@ -61,7 +69,7 @@
 }
 .Banner-title{
     color:black;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 .banner-red{
@@ -70,7 +78,7 @@ color: #E95A08;
 .banner-des{
     color: rgba(0, 0, 0, 0.5);
     font: inter;
-    font-size: 1.37rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -80,7 +88,44 @@ main{
 }
 
 /* flower plants styles */
+.Plants-Section{
+    text-align: center;
+    /* justify-content: center; */
+}
 .our-plants{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+
+    
+}
+.plant-container{
+ /* justify-content: center;
+ align-items: center; */
+ text-align: center;
+  
+}
+.btn-flower{
+    background-color: #E95A08;
+    font-size: 1rem;
+    border: none;
+    color: #FFFFFF;
+    width: 270px;
+    height: 50px;
+    /* padding: 26px 50px; */
+}
+
+.plants-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+.plant-red{
+    color: #E95A08;
+}
+.plants-des{
+    font-family: inter;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
 }
