@@ -97,13 +97,15 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:30px;
-
+max-width: 1250px;
+   margin: auto;  
     
 }
 .plant-container{
  /* justify-content: center;
  align-items: center; */
  text-align: center;
+ margin: auto;
   
 }
 .btn-flower{
@@ -129,3 +131,50 @@ main{
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.2rem;
 }
+
+
+/* flower-lover-styles */
+.flower-lover-section{
+    margin-top: 200px;
+    display: flex;
+    text-align:left;
+    justify-content: center;
+    gap: 50px;
+}
+
+.flower-lover-title{
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    gap: 60px;
+}
+.flower-lover-des{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: inter;
+    max-width: 540px;
+    
+}
+
+/* footer styles */
+.footer-items{
+    margin: 50px auto;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items:top;
+    gap: 200px;
+}
+.footer-nav a{
+    text-decoration: none;
+    
+   
+}
+.footer-nav{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+/* .footer-icon img{
+    align-content: top;
+} */
