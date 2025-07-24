@@ -89,7 +89,9 @@ color: #E95A08;
 
 /* main section started */
 main{
-    margin-top: 130px;
+    /* margin-top: 130px; */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 /* flower plants styles */
@@ -167,7 +169,22 @@ main{
     
 }
 
-/* Deals section */
+/* Best Deals section */
+.best-deal-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E95A08;
+}
+
+.best-deal-red{
+    color: black;
+}
+.best-deal-des{
+ font-size: 1.2rem;
+    font-weight: 400;
+    font-family: inter;
+   color: rgba(0, 0, 0, 0.5)
+}
 .best-deals{
     /* display: flex; */
     text-align: center;
@@ -182,8 +199,8 @@ main{
    .best-img2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    display: calc(100% - 28px)/2;
-   gap: 27px;
+    
+   gap: 26px;
     
     
    }
@@ -192,9 +209,22 @@ border-radius: 22px;
 }
 .best-img3{
  border-radius: 14px;
+  
  /* gap: 30px; */
 }
-
+/* text over image */
+.image-text, .discount, .shop-now{
+/* position: absolute; */
+align-items: center;
+text-align: center;
+justify-content: center;
+justify-items: center;
+padding: 65px 48px;
+}
+.best-img1, .image-text{
+position: absolute;
+display: ;
+}
 
 
 
@@ -230,6 +260,7 @@ border-radius: 22px;
     color: #FFFFFF;
     background-color: #E95A08;
     border: none;
+    
 }
 
 
@@ -257,3 +288,39 @@ border-radius: 22px;
 /* .footer-icon img{
     align-content: top;
 } */
+
+ /* <h3 class="best-img-h3-1">60% Off | Bloom Plant</h3>
+                    <h5 class="best-img-h5-2">Shop Now</h5> */
+
+/* Responsive Media Query */ 
+@media screen and (max-width : 576px)
+{
+ main{
+    margin-top: 130px;
+}
+section{
+    margin-top: 100px;
+}
+    .navbar, .Plants-Section, .plants-title, .plants-des{
+        flex-direction: column;
+        /* justify-content: space-around; */
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+    .our-plants{
+    margin-top: 40px;
+    
+    grid-template-columns: repeat(2, 1fr);
+    
+    gap:30px;
+
+
+    max-width: 100%;
+   margin: auto ;
+    
+}
+}
