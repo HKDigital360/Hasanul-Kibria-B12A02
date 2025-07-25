@@ -33,8 +33,14 @@
     margin: auto; */
 }
 
-section{
+main> section{
     margin-top: 130px;
+}
+
+main{
+    /* margin-top: 130px; */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /* nav styles */
 
@@ -228,6 +234,9 @@ display: ;
 
 
 
+
+
+
 /*  colorful-subscription-button*/
 .colorful-container{
     display: flex;
@@ -295,32 +304,148 @@ display: ;
 /* Responsive Media Query */ 
 @media screen and (max-width : 576px)
 {
- main{
-    margin-top: 130px;
-}
-section{
-    margin-top: 100px;
-}
-    .navbar, .Plants-Section, .plants-title, .plants-des{
+    .flower-lover-section,
+    .footer-items,
+    .footer-nav
+    {
         flex-direction: column;
-        /* justify-content: space-around; */
+    }
+    .footer-nav{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
     }
 
-    .banner{
-        flex-direction: column-reverse;
-        margin-top: 100px;
-        justify-content: space-around;
-    }
-    .our-plants{
-    margin-top: 40px;
-    
+
+.footer-items{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+    .navbar {
+    margin: 15px 20px; 
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    align-items: center;
+    gap: 8px; 
+  }
+
+  .nav-item a {
+    margin-right: 0; 
+    margin-bottom: 5px; 
+  }
+
+  /* Banner adjustments */
+  .banner {
+    flex-direction: column-reverse; 
+    /* margin: 28px 28px 0; */
+    margin-left: 28px;
+    margin-right: 28px;
+    height: auto;
+    gap: 0; 
+    justify-items: center;
+  }
+
+  .banner img {
+    width: 100%; 
+    /* max-width: 300px; 
+    margin-bottom: 10px;  */
+    margin:26px 16px;}
+
+  .banner-container {
+    margin-top: 20px; 
+    height: auto; 
+    padding: 0 20px;
+    text-align: center;}
+
+  /* .Banner-title {
+    font-size: 2rem;
+    line-height: 1.2; 
+  } */
+
+  /* .banner-des {
+    font-size: 1rem; 
+    line-height: 1.5;
+  } */
+
+  .banner-des br {
+    display: none; 
+  }
+.Plants-Section,
+.plants-title,
+.plants-des
+{
+     max-width: 326px;
+     margin: 30px 20px;
+justify-items: center;
+
+}
+  .our-plants{
+    /* display: grid; */
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
-    gap:30px;
+    /* margin: 30px 20px; */
+margin-left: 20px;
+margin-right: 20px;
+    /* width: 326px; */
+    gap: 20px;
+ /* padding: 0 20px; */
+justify-items: center;
+  }
 
 
-    max-width: 100%;
-   margin: auto ;
+
+
+
+  .plant-container{
+max-width: 100%;
+  }
+
+
+
+
+
+  .flower-lover-section{
     
+    margin-left: 15px;
+margin-right: 15px;
+justify-items: center;
+  }
+
+
+  .best-img{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .best-img2 img{
+    margin-right: 20px
+  } ;
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
