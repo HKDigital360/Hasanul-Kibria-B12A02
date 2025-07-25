@@ -155,7 +155,7 @@ main{
     display: flex;
     text-align:left;
     justify-content: center;
-    gap: 40px;
+    gap: 70px;
 
     max-width: 100%;
     margin: auto ;
@@ -174,7 +174,14 @@ main{
     max-width: 540px;
     
 }
-
+.trusted-badge{
+    height: 286px;
+    width: 286px;
+    margin-left: 370px;
+    margin-top:-127px;
+    position:absolute;
+   
+}
 /* Best Deals section */
 .best-deal-title{
     font-size: 3rem;
@@ -304,6 +311,13 @@ display: ;
 /* Responsive Media Query */ 
 @media screen and (max-width : 576px)
 {
+.colorful-subscription-button input{
+    width: 321px;
+    justify-items: center;
+}
+    main{
+        max-width: 340px;
+    }
     .flower-lover-section,
     .footer-items,
     .footer-nav
@@ -312,11 +326,13 @@ display: ;
     }
     .footer-nav{
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: -120px;
+        margin-bottom:-120px;
         
     }
-
+.footer-items{
+    justify-items: center;
+}
 
 .footer-items{
     margin-left: 15px;
