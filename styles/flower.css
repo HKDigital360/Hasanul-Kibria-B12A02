@@ -183,21 +183,6 @@ main{
    
 }
 /* Best Deals section */
-.best-deal-title{
-    font-size: 3rem;
-    font-weight: bold;
-    color: #E95A08;
-}
-
-.best-deal-red{
-    color: black;
-}
-.best-deal-des{
- font-size: 1.2rem;
-    font-weight: 400;
-    font-family: inter;
-   color: rgba(0, 0, 0, 0.5)
-}
 .best-deals{
     /* display: flex; */
     text-align: center;
@@ -212,8 +197,8 @@ main{
    .best-img2{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    
-   gap: 26px;
+    display: calc(100% - 28px)/2;
+   gap: 27px;
     
     
    }
@@ -222,25 +207,21 @@ border-radius: 22px;
 }
 .best-img3{
  border-radius: 14px;
-  
  /* gap: 30px; */
 }
-/* text over image */
-.image-text, .discount, .shop-now{
-/* position: absolute; */
-align-items: center;
-text-align: center;
-justify-content: center;
-justify-items: center;
-padding: 65px 48px;
+.best-deal-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color:black;
 }
-.best-img1, .image-text{
-position: absolute;
-display: ;
+.best-deal-red{
+    color: #E95A08;
 }
-
-
-
+.best-deal-des{
+font-size: 1rem;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -308,12 +289,23 @@ display: ;
  /* <h3 class="best-img-h3-1">60% Off | Bloom Plant</h3>
                     <h5 class="best-img-h5-2">Shop Now</h5> */
 
+
+
+
 /* Responsive Media Query */ 
 @media screen and (max-width : 576px)
 {
+
+    .trusted-badge{
+        display: none;
+    }
+    .trusted-badge-img2 img{
+width: 100%;
+    }
 .colorful-subscription-button input{
     width: 321px;
     justify-items: center;
+    margin: auto;
 }
     main{
         max-width: 340px;
@@ -332,12 +324,11 @@ display: ;
     }
 .footer-items{
     justify-items: center;
-}
-
-.footer-items{
-    margin-left: 15px;
+      margin-left: 15px;
     margin-right: 15px;
 }
+
+
 
 
     .navbar {
@@ -404,8 +395,9 @@ justify-items: center;
 }
   .our-plants{
     /* display: grid; */
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     /* margin: 30px 20px; */
 margin-left: 20px;
 margin-right: 20px;
@@ -428,20 +420,20 @@ max-width: 100%;
 
 
   .flower-lover-section{
-    
-    margin-left: 15px;
-margin-right: 15px;
+    width: 361px;
+    /* margin-left: 15px;
+margin-right: 15px; */
 justify-items: center;
   }
 
 
-  .best-img{
+  .best-img img{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+   
+    width: 100%;
+
   }
-  .best-img2 img{
-    margin-right: 20px
-  } ;
 }
 
 
